@@ -36,7 +36,6 @@ int main(int argc, char **argv) {
   // sort edges by weight
   void **edges = edgesDA->store;
   int sizeEdges = sizeDA(edgesDA);
-  // free(edgesDA);
   qsort(edges, sizeEdges, sizeof(edges[0]), compareEDGEweight);
 
   // find MST using Kruskal's algorithm

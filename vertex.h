@@ -28,10 +28,7 @@ struct neighbor {
 extern VERTEX *newVERTEX(int);
 extern NEIGHBOR *newNEIGHBOR(VERTEX *, int, int);
 extern int indexVERTEXneighbor(VERTEX *, VERTEX *);
-extern void insertVERTEXsuccessor(VERTEX *, VERTEX *);
-extern DA *getVERTEXsuccessors(VERTEX *);
 extern void displayVERTEX(void *, FILE *fp);
-extern void displayVERTEXdebug(void *, FILE *fp);
 extern void setNEIGHBORactive(NEIGHBOR *, int);
 extern int compareVERTEX(const void *, const void *);
 extern int compareNEIGHBOR(const void *, const void *);
